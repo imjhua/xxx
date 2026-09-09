@@ -1,0 +1,31 @@
+{
+  "call_id": 1043829100,
+  "departure_coordinate": {
+    "latitude": 37.5171253,
+    "longitude": 127.0409277
+  },
+  "destination_coordinate": {
+    "latitude": 37.5031585,
+    "longitude": 127.0408689
+  },
+  "routes": [
+    {
+      "id": 770021,
+      "sequence": 0,
+      "issuedAt": "2026-08-06T18:03:22+09:00",
+      "route_trigger": "INITIAL"
+    },
+    {
+      "id": 770044,
+      "sequence": 1,
+      "issuedAt": "2026-08-06T18:12:32+09:00",
+      "route_trigger": "DEVIATION"
+    },
+    {
+      "id": 770069,
+      "sequence": 2,
+      "issuedAt": "2026-08-06T18:22:02+09:00",
+      "route_trigger": "SYSTEM_REROUTE"
+    }
+  ]
+}

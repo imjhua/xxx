@@ -1,0 +1,216 @@
+{
+  "route_id": 770021,
+  "call_id": 1043829100,
+  "route_sequence": 0,
+  "route_trigger": "INITIAL",
+  "issuedAt": "2026-08-06T18:03:22+09:00",
+  "departure_coordinate": {
+    "latitude": 37.5171253,
+    "longitude": 127.0409277
+  },
+  "destination_coordinate": {
+    "latitude": 37.5031585,
+    "longitude": 127.0408689
+  },
+  "path": [
+    {
+      "latitude": 37.5171253,
+      "longitude": 127.0409277
+    },
+    {
+      "latitude": 37.5172271,
+      "longitude": 127.0412658
+    },
+    {
+      "latitude": 37.5165174,
+      "longitude": 127.0415237
+    },
+    {
+      "latitude": 37.5157269,
+      "longitude": 127.041828
+    },
+    {
+      "latitude": 37.5156821,
+      "longitude": 127.0418512
+    },
+    {
+      "latitude": 37.5151161,
+      "longitude": 127.042062
+    },
+    {
+      "latitude": 37.5143075,
+      "longitude": 127.0423438
+    },
+    {
+      "latitude": 37.5141548,
+      "longitude": 127.0424023
+    },
+    {
+      "latitude": 37.5136875,
+      "longitude": 127.0425667
+    },
+    {
+      "latitude": 37.5128612,
+      "longitude": 127.0428939
+    },
+    {
+      "latitude": 37.5123942,
+      "longitude": 127.0430809
+    },
+    {
+      "latitude": 37.5118281,
+      "longitude": 127.0432804
+    },
+    {
+      "latitude": 37.5115496,
+      "longitude": 127.0433745
+    },
+    {
+      "latitude": 37.5110285,
+      "longitude": 127.0435621
+    },
+    {
+      "latitude": 37.5102739,
+      "longitude": 127.0438432
+    },
+    {
+      "latitude": 37.5095822,
+      "longitude": 127.0441009
+    },
+    {
+      "latitude": 37.5092499,
+      "longitude": 127.0442408
+    },
+    {
+      "latitude": 37.5087303,
+      "longitude": 127.0446094
+    },
+    {
+      "latitude": 37.5087123,
+      "longitude": 127.0446209
+    },
+    {
+      "latitude": 37.5083015,
+      "longitude": 127.0450673
+    },
+    {
+      "latitude": 37.5078918,
+      "longitude": 127.0456607
+    },
+    {
+      "latitude": 37.5075716,
+      "longitude": 127.046185
+    },
+    {
+      "latitude": 37.5072781,
+      "longitude": 127.0466638
+    },
+    {
+      "latitude": 37.5070112,
+      "longitude": 127.0470857
+    },
+    {
+      "latitude": 37.5068955,
+      "longitude": 127.0472568
+    },
+    {
+      "latitude": 37.5066018,
+      "longitude": 127.047713
+    },
+    {
+      "latitude": 37.5064233,
+      "longitude": 127.0479302
+    },
+    {
+      "latitude": 37.5061281,
+      "longitude": 127.0481941
+    },
+    {
+      "latitude": 37.5059848,
+      "longitude": 127.0482977
+    },
+    {
+      "latitude": 37.5056528,
+      "longitude": 127.0484715
+    },
+    {
+      "latitude": 37.5054464,
+      "longitude": 127.048576
+    },
+    {
+      "latitude": 37.5052219,
+      "longitude": 127.0486693
+    },
+    {
+      "latitude": 37.5051501,
+      "longitude": 127.0487041
+    },
+    {
+      "latitude": 37.5046116,
+      "longitude": 127.0489711
+    },
+    {
+      "latitude": 37.504297,
+      "longitude": 127.0479459
+    },
+    {
+      "latitude": 37.5040746,
+      "longitude": 127.0471796
+    },
+    {
+      "latitude": 37.5035844,
+      "longitude": 127.0456137
+    },
+    {
+      "latitude": 37.5035287,
+      "longitude": 127.0454222
+    },
+    {
+      "latitude": 37.5031684,
+      "longitude": 127.0443184
+    },
+    {
+      "latitude": 37.5029554,
+      "longitude": 127.0436085
+    },
+    {
+      "latitude": 37.5028631,
+      "longitude": 127.0433383
+    },
+    {
+      "latitude": 37.502715,
+      "longitude": 127.0428538
+    },
+    {
+      "latitude": 37.5026872,
+      "longitude": 127.0427524
+    },
+    {
+      "latitude": 37.5024554,
+      "longitude": 127.0419524
+    },
+    {
+      "latitude": 37.5021967,
+      "longitude": 127.041164
+    },
+    {
+      "latitude": 37.502744,
+      "longitude": 127.0408742
+    },
+    {
+      "latitude": 37.5031119,
+      "longitude": 127.0406772
+    },
+    {
+      "latitude": 37.5031585,
+      "longitude": 127.0408689
+    }
+  ],
+  "congestion_segments": [
+    {
+      "start_index": 0,
+      "end_index": 47,
+      "congestion_level": "UNKNOWN"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+@config "../tailwind.config.ts";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root{
+    --skeleton: 210 40% 96.1%; 
+    --skeleton-foreground: 215.4 16.3% 46.9%;
+
+    /* ============= tweb 컬러 - TUI 디자인 시스템 ============= */
+    --tweb-neutral1: #262d39;
+    --tweb-neutral2: rgba(38, 45, 57, 0.72);
+    --tweb-neutral3: rgba(38, 45, 57, 0.52);
+    --tweb-neutral4: rgba(38, 45, 57, 0.32);
+    --tweb-neutral5: rgba(38, 45, 57, 0.16);
+    --tweb-neutral6: rgba(38, 45, 57, 0.08);
+    --tweb-gray-n6: rgba(238, 238, 239, 1);
+    --tweb-black: #000;
+    --tweb-white: #fff;
+    --tweb-white2: rgba(255, 255, 255, 0.72);
+    --tweb-white3: rgba(255, 255, 255, 0.52);
+    --tweb-white6: #FFFFFF14;
+    --tweb-primary1: rgba(6, 106, 235, 1);
+    --tweb-primary4: #FAE100;
+    --tweb-primary5: rgba(221, 59, 59, 1);
+    --tweb-primary6: rgba(239, 245, 255, 1);
+    --tweb-primary7: rgba(36, 202, 9, 1);
+    --tweb-bg: rgba(245, 246, 247, 1);
+    --tweb-bg2: rgba(248, 248, 248, 1);
+    /* 컬러 - Floating */
+    --tweb-message: rgba(38, 45, 57, 0.88);
+    --tweb-alert-red: rgba(209, 32, 32, 0.87);
+    --tweb-toast: rgba(99, 104, 112, 0.97);
+
+    /* ============= 타이포 - TUI 디자인 시스템 ============= */
+    --tweb-typo: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue",
+      Arial, sans-serif;
+    /* 타이포 사이즈 */
+    --tweb-typo-display: 28px;
+    --tweb-typo-title1: 24px;
+    --tweb-typo-title2: 20px;
+    --tweb-typo-headline: 18px;
+    --tweb-typo-body1: 16px;
+    --tweb-typo-body2: 14px;
+    --tweb-typo-caption1: 12px;
+    --tweb-typo-caption2: 10px;
+    /* 타이포 두께 */
+    --tweb-typo-regular: 400;
+    --tweb-typo-medium: 600;
+    --tweb-typo-bold: 700;
+
+    /* ============= 버튼 ============= */
+    --tweb-btn-xsmall: 22px;
+    --tweb-btn-small: 30px;
+    --tweb-btn-medium: 36px;
+    --tweb-btn-large: 48px;
+    --tweb-btn-xlarge: 52px;
+
+    /* ============= 레이아웃 ============= */
+    --tweb-layout-max-width: 1490px;
+    --tweb-header-height: 100px;
+    --tweb-footer-height: 120px;
+
+    /* ============= 제트 인덱스 ============= */
+    --tweb-zindex-skip-menu: 10000;
+    --tweb-zindex-loading: 2000;
+    --tweb-zindex-modal: 1500;
+    --tweb-zindex-header: 1000;
+    --tweb-zindex-tooltip: 20;
+    --tweb-zindex-select: 10;
+
+    /* ============= 차트 색상 ============= */
+    --chart-1: hsl(220, 70%, 50%);
+    --chart-2: hsl(160, 60%, 45%);
+    --chart-3: hsl(30, 80%, 55%);
+    --chart-4: hsl(280, 65%, 60%);
+    --chart-5: hsl(340, 75%, 55%);
+  }
+}
+
+/* Loading */
+.loading-box {
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  &.open {
+    z-index: var(--tweb-zindex-loading);
+    display: flex;
+  }
+
+  .ic-loading {
+    animation: 0.8s linear infinite animation-loading;
+  }
+}
+
+@keyframes animation-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom Scrollbar Utilities */
+@layer utilities {
+  .scrollbar-thin {
+    /* Webkit 기반 브라우저 (Chrome, Safari, Edge) */
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(209 213 219); /* gray-300 */
+      border-radius: 9999px;
+      transition: background-color 0.2s ease;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgb(156 163 175); /* gray-400 */
+    }
+    
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgb(209 213 219) transparent;
+  }
+  
+  .scrollbar-none {
+    /* Webkit 기반 브라우저 */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* Firefox */
+    scrollbar-width: none;
+    
+    /* IE */
+    -ms-overflow-style: none;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
